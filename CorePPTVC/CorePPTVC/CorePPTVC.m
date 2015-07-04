@@ -293,7 +293,9 @@
     
     if(self.timer!=nil || self.count==0 || self.clv==nil) return;
     
-    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:6.0f target:self selector:@selector(timerRunAction) userInfo:nil repeats:YES];
+    self.timer_Time = self.timer_Time?self.timer_Time:PPTTimerTime;
+    
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:self.timer_Time target:self selector:@selector(timerRunAction) userInfo:nil repeats:YES];
     
     //记录
     self.timer = timer;

@@ -23,7 +23,8 @@ BOOL const isUseTransitionAnim = YES;
 /** 动画时长 */
 CGFloat const PPTAnimTime = 3.6;
 
-
+/** 定时器的时间 */
+CGFloat const PPTTimerTime = 5.0;
 
 
 

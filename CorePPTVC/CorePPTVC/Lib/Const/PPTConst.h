@@ -42,7 +42,8 @@ extern BOOL const isUseTransitionAnim;
 extern CGFloat const PPTAnimTime;
 
 
-
+/** 定时器的时间 */
+extern CGFloat const PPTTimerTime;
 
 #endif
 

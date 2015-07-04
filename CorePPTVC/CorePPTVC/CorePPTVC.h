@@ -21,6 +21,11 @@
 /** 幻灯模型数组 */
 @property (nonatomic,strong) NSArray *pptModels;
 
+/**
+ *  定时器的时间设置
+ */
+@property (nonatomic,assign) CGFloat timer_Time;
+
 
 
 
