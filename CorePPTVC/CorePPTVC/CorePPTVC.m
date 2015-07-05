@@ -273,8 +273,11 @@
     //取出模型
     PPTModel *pptModel = self.pptModels[_page];
     
-    //更改文字
-    self.label.text = [NSString stringWithFormat:@"  %@",pptModel.title];
+    self.label.hidden = pptModel.title ? NO:YES;
+    if (pptModel.title != nil) {
+        //更改文字
+        self.label.text = [NSString stringWithFormat:@"  %@",pptModel.title];
+    }
 }
 
 
